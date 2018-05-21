@@ -1,3 +1,6 @@
-import './css/main.css';
+//import './css/main.css';
 
-console.log("hello world from webpack");
+import {hello, sup} from './js/module';
+
+hello();
+sup();

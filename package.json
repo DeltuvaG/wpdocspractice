@@ -13,6 +13,7 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
     "css-loader": "^0.28.11",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
