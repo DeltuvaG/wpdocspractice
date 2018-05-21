@@ -1,11 +1,17 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-	entry: './src/index.js',
+	entry: {
+		app: './src/index.js',
+		about: './src/js/about.js',
+		contact: './src/js/contact.js'
+	},
 	output: {
-		filename: 'bundle.js',
+		filename: '[name].bundle.js',
 		path: path.resolve(__dirname, 'dist')
 	},
+	devtool: "inline-source-map",
 	module: {
 		rules: [
 			{
@@ -21,5 +27,10 @@ module.exports = {
 				loader: "babel-loader"
 			}
 		]
-	}
+	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			title: 'Multiple bundles!'
+		})
+	]
 };
