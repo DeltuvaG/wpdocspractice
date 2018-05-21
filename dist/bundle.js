@@ -79,7 +79,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _module = __webpack_require__(/*! ./js/module */ \"./src/js/module.js\");\n\n(0, _module.hello)(); //import './css/main.css';\n\n(0, _module.sup)();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\nvar _module = __webpack_require__(/*! ./js/module */ \"./src/js/module.js\");\n\n(0, _module.hello)(); //import './css/main.css';\n\n(0, _module.sup)();\n\nconsole.log(\"webpack is watching you!\");\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
